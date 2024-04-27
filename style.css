@@ -1,0 +1,374 @@
+* {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #44bb5e;
+}
+
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1.2rem 3rem;
+  cursor: pointer;
+  color: #fff;
+  background: #263238;
+  font-size: 1rem;
+  border-radius: 15px;
+}
+
+
+.btn:hover {
+  background: #44bb6a;
+}
+
+
+
+header {
+    height: 12vh;
+    background-color: rgb(31, 25, 25);
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu ul{
+    display: flex;
+    gap: 20px;
+}
+
+.logo span{
+    color: rgb(11, 100, 73);
+}
+
+.logo {
+    font-size: 2rem;
+    margin-right:26rem ;
+}
+
+
+
+
+
+.home {
+  width: 100%;
+  height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2rem;
+    padding: 65px;
+  }
+  
+  .home .img-home {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40rem;
+            flex: 1 1 40rem;
+  }
+  
+  .home .img-home img {
+    width: 100%;
+    padding: 5rem;
+  }
+  
+  .home .content {
+    width: 45rem;
+  }
+  
+  .home .content span {
+    color: rgb(11, 100, 73);
+    font-size: 2rem;
+  }
+  
+  .home .content h3 {
+    color: #263238;
+    font-size: 2.6rem;
+    padding: 2rem 0;
+    
+  }
+  
+  .home .content h3 a {
+    color: rgb(11, 100, 73);
+    
+  }
+  
+  .home .content h3 a:hover {
+    text-decoration: underline;
+  }
+  
+  .home .content p {
+    font-size: 1.2rem;
+    color: #777;
+    padding-bottom: 1rem;
+    line-height: 2;
+  }
+
+  
+.about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .about .img-about {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40rem;
+            flex: 1 1 40rem;
+  }
+  
+  .about .img-about img {
+    width: 100%;
+  }
+  
+  .about .content {
+    width: 45rem;
+    margin: 4rem;
+  }
+  
+  .about .content span {
+    font-size: 2rem;
+    color: rgb(11, 100, 73);
+  }
+  
+  .about .content h3 {
+    padding-top: 2rem;
+    font-size: 2.4rem;
+    color: #263238;
+  }
+  
+  .about .content p {
+    padding: 1.5rem 0;
+    line-height: 2;
+    font-size: 1.4rem;
+    color: #777;
+  }
+
+
+
+
+  .heading {
+    margin-top: 12rem;
+    text-align: center;
+    margin-bottom: -9rem;
+  }
+  
+  .heading span {
+    font-size: 2rem;
+    color: #448fbb;
+    text-transform: uppercase;
+  }
+  
+  .heading h3 {
+    padding-top: 1rem;
+    font-size: 3rem;
+    color: #263238;
+    text-transform: uppercase;
+  }
+  
+
+  
+.containe {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.card {
+  border-radius: 16px;
+  box-shadow: rgba(1, 75, 29, 0.788) 0px 5px 15px;
+  cursor: pointer;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(#000000, #014d18);
+  transition: all .5s;
+}
+
+.card:hover {
+  background-image: linear-gradient(rgb(2, 122, 48), rgb(2, 100, 35));
+}
+
+.card .img {
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-image: url('./SHOP.png');
+  background-size: cover;
+  background-position: center;
+  transition: all .5s;
+  z-index: 2;
+  position: relative;
+  opacity: .8;
+}
+
+.card .img span {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 100;
+  font-style: italic;
+  transition: all .5s;
+}
+
+.card:hover .img {
+  width: 430px;
+  opacity: 1;
+}
+
+.card:hover .img span {
+  font-size: 28px;
+}
+
+.card .conte {
+  padding: 0px 20px;
+  height: 0;
+  opacity: 0;
+  transition: all .5s;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  transform: translateY(30px);
+}
+
+.card:hover .conte {
+  height: 260px;
+  padding: 20px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card .conte p {
+  margin: 0;
+}
+
+.card .conte .title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card .conte .desc {
+  font-size: 14px;
+  font-weight: 100;
+  opacity: .8;
+  margin-top: 8px;
+}
+
+.card .arrow {
+  padding: 15px;
+  transform: rotate(-180deg);
+  transition: all .5s;
+}
+
+.card:hover .arrow {
+  transform: rotate(0);
+}
+
+.card .arrow span {
+  font-size: 24px;
+}
+
+
+.banner {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url(../images/empresa1.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../images/empresa1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2rem;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.banner .content span {
+  font-size: 2rem;
+  color: #3d00e3;
+}
+
+.banner .content h3 {
+  font-size: 4rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.banner .content p {
+  max-width: 60rem;
+  margin: 1rem auto;
+  font-size: 1.4rem;
+  color: #aaa;
+  line-height: 2;
+}
+
+
+
+
+/*RODA PE*/
+
+#footer {
+  height: 20px;
+}
+
+
+
+.footer .box-container {
+  display: flex;
+  background-color: rgb(31, 25, 25);
+  justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.footer .box-container .box {
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .logo {
+  padding-bottom: 1rem;
+}
+
+
+.logo-1 span{
+  color: #3d00e3;
+}
